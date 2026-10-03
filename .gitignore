@@ -1,0 +1,49 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Dataset files
+data/
+riva_1.0/
+images/
+annotations/
+
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+saved_models/
+
+# Training/output folders
+riva_outputs/
+outputs/
+runs/
+wandb/
+
+# Large compressed files
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.rar
+*.7z
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
