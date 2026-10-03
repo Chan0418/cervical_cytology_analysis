@@ -1,6 +1,6 @@
 # cervical_cytology_analysis
 
-# Cervical Cytology Classification and Localisation Using Deep Learning
+# An Analysis on Cervical Cancer Risks and Early Detection 
 
 This project develops a deep learning framework for cervical cytology image classification and pre-cancerous cell localisation using the RIVA dataset. The project compares several classification models, evaluates multi-class classification settings, and uses localisation models to highlight suspected pre-cancerous cell regions.
 
