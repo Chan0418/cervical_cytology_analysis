@@ -1,0 +1,161 @@
+{
+  "task": "binary",
+  "timestamp": "20260627_203810",
+  "classes": [
+    "NON_LESION",
+    "PRECANCEROUS"
+  ],
+  "threshold": 0.5,
+  "best_model": "EfficientNet",
+  "search_space": [
+    {
+      "lr": 0.0001,
+      "wd": 0.0001,
+      "dropout": 0.3,
+      "opt": "adam"
+    },
+    {
+      "lr": 0.0005,
+      "wd": 0.0001,
+      "dropout": 0.3,
+      "opt": "adam"
+    },
+    {
+      "lr": 0.0001,
+      "wd": 0.0005,
+      "dropout": 0.5,
+      "opt": "adam"
+    }
+  ],
+  "tuning_epochs": 20,
+  "final_epochs": 20,
+  "patience": 5,
+  "loss": "BCEWithLogitsLoss pos_weight=0.539",
+  "tuning_rows": [
+    {
+      "model": "CNN",
+      "config_id": 1,
+      "cfg": {
+        "lr": 0.0001,
+        "wd": 0.0001,
+        "dropout": 0.3,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.32324016094207764
+    },
+    {
+      "model": "CNN",
+      "config_id": 2,
+      "cfg": {
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "dropout": 0.3,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.3153406322002411
+    },
+    {
+      "model": "CNN",
+      "config_id": 3,
+      "cfg": {
+        "lr": 0.0001,
+        "wd": 0.0005,
+        "dropout": 0.5,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.32841508984565737
+    },
+    {
+      "model": "ResNet34",
+      "config_id": 1,
+      "cfg": {
+        "lr": 0.0001,
+        "wd": 0.0001,
+        "dropout": 0.3,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.25684294998645785
+    },
+    {
+      "model": "ResNet34",
+      "config_id": 2,
+      "cfg": {
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "dropout": 0.3,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.2602930933237076
+    },
+    {
+      "model": "ResNet34",
+      "config_id": 3,
+      "cfg": {
+        "lr": 0.0001,
+        "wd": 0.0005,
+        "dropout": 0.5,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.2609753370285034
+    },
+    {
+      "model": "EfficientNet",
+      "config_id": 1,
+      "cfg": {
+        "lr": 0.0001,
+        "wd": 0.0001,
+        "dropout": 0.3,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.2381700336933136
+    },
+    {
+      "model": "EfficientNet",
+      "config_id": 2,
+      "cfg": {
+        "lr": 0.0005,
+        "wd": 0.0001,
+        "dropout": 0.3,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.23324233889579774
+    },
+    {
+      "model": "EfficientNet",
+      "config_id": 3,
+      "cfg": {
+        "lr": 0.0001,
+        "wd": 0.0005,
+        "dropout": 0.5,
+        "opt": "adam"
+      },
+      "best_val_loss": 0.24193258881568908
+    }
+  ],
+  "results": {
+    "CNN": {
+      "recall": 0.26881720430107525,
+      "precision": 0.8620689655172413,
+      "f1": 0.4098360655737705,
+      "macro_f1": 0.682695810564663,
+      "avg_precision": 0.7789940897979268,
+      "threshold": 0.5
+    },
+    "ResNet34": {
+      "recall": 0.5376344086021505,
+      "precision": 0.8771929824561403,
+      "f1": 0.6666666666666666,
+      "macro_f1": 0.8162230671736375,
+      "avg_precision": 0.8397938456286562,
+      "threshold": 0.5
+    },
+    "EfficientNet": {
+      "recall": 0.7741935483870968,
+      "precision": 0.7659574468085106,
+      "f1": 0.7700534759358288,
+      "macro_f1": 0.8657959687371453,
+      "avg_precision": 0.7889874108562205,
+      "threshold": 0.5
+    }
+  }
+}

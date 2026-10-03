@@ -1,0 +1,9 @@
+metric,better,weight,winner,why_used,unet,stacked_hourglass
+mAP_per_image,higher,0.2,stacked_hourglass,Main heatmap ranking metric,0.5101,0.5104
+global_AP,higher,0.15,stacked_hourglass,Overall pixel ranking metric,0.3615,0.3725
+f1@val_best_thr,higher,0.15,stacked_hourglass,Balanced thresholded heatmap metric,0.3955,0.4075
+dice@val_best_thr,higher,0.1,stacked_hourglass,Heatmap overlap metric,0.3955,0.4075
+point_f1@20px,higher,0.2,unet,Main centre-point localisation metric,0.1762,0.1356
+mean_matched_distance@20px,lower,0.1,unet,Lower centre distance is better,5.0324,5.318
+false_positive_points_per_image@20px,lower,0.05,stacked_hourglass,Lower hallucinated points is better,1.1181,0.5625
+positive_image_block_rate,lower,0.05,unet,Lower wrongly blocked positive images is better,0.6344,0.6344

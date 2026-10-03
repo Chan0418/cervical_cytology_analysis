@@ -1,0 +1,5 @@
+metric,better,weight,why_used,winner,unet,stacked_hourglass
+mAP_per_image,higher,0.2,Main per-image heatmap ranking metric,stacked_hourglass,0.510094937815658,0.5104040699050402
+global_AP,higher,0.15,Overall pixel ranking metric,stacked_hourglass,0.36149104554978223,0.37248210724271497
+f1@val_best_thr,higher,0.15,Balanced thresholded heatmap metric,stacked_hourglass,0.39549563056680964,0.4074637397704899
+dice@val_best_thr,higher,0.1,Heatmap overlap metric,stacked_hourglass,0.3954956351259101,0.40746374438913174

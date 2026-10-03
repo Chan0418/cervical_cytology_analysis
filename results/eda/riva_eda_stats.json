@@ -1,0 +1,25 @@
+{
+  "total_images": 959,
+  "total_keypoints": 26158,
+  "multi_label_images": 718,
+  "label_image_counts": {
+    "ASCUS": 126,
+    "INFL": 664,
+    "NILM": 665,
+    "ASCH": 115,
+    "LSIL": 406,
+    "HSIL": 244,
+    "ENDO": 105,
+    "SCC": 110
+  },
+  "label_keypoint_counts": {
+    "ASCUS": 356,
+    "INFL": 8190,
+    "NILM": 9457,
+    "ASCH": 416,
+    "LSIL": 3048,
+    "HSIL": 1835,
+    "ENDO": 1270,
+    "SCC": 1586
+  }
+}
